@@ -59,3 +59,6 @@ allow mtk_hal_bluetooth kernel:process setsched;
 # Allow ReadDefaultFstab().
 read_fstab(mtk_hal_bluetooth)
 
+# Allow access to read /proc/stpbt/
+allow mtk_hal_bluetooth proc_stpbt:dir search;
+allow mtk_hal_bluetooth proc_stpbt:file r_file_perms;

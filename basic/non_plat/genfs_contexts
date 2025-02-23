@@ -679,3 +679,6 @@ genfscon sysfs /devices/platform/13040000.mali/total_gpu_mem u:object_r:sysfs_gp
 # IRQ
 genfscon sysfs /kernel/irq          u:object_r:sysfs_irq:s0
 genfscon proc /irq                  u:object_r:proc_irq:s0
+
+# Bluetooth
+genfscon proc /stpbt u:object_r:proc_stpbt:s0
