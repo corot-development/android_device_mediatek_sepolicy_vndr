@@ -1,0 +1,12 @@
+type uart_launcher, domain;
+type uart_launcher_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(uart_launcher)
+
+set_prop(uart_launcher, vendor_mtk_wmt_prop)
+
+allow uart_launcher ttyS_device:chr_file rw_file_perms;
+allow uart_launcher stpbt_device:chr_file rw_file_perms;
+
+allow uart_launcher proc_stpbt:dir search;
+allow uart_launcher proc_stpbt:file r_file_perms;
