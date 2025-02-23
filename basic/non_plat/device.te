@@ -23,6 +23,8 @@ type gps2scp_device, dev_type;
 type aol_geofence_device, dev_type;
 type gps_pwr_device, dev_type;
 type gpsdl_device, dev_type;
+type gpsmdl_device, dev_type;
+type gpsstrg_device, dev_type;
 type connfem_device, dev_type;
 type fw_log_gps_device, dev_type;
 type fw_log_wmt_device, dev_type;

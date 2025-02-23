@@ -40,6 +40,8 @@ allow mnld mnld_device:chr_file rw_file_perms;
 allow mnld stpgps_device:chr_file rw_file_perms;
 allow mnld gps2scp_device:chr_file rw_file_perms;
 allow mnld gps_pwr_device:chr_file rw_file_perms;
+allow mnld gpsmdl_device:chr_file rw_file_perms;
+allow mnld gpsstrg_device:chr_file rw_file_perms;
 allow mnld mnld_data_file:file create_file_perms;
 allow mnld mnld_data_file:fifo_file create_file_perms;
 allow mnld gps_emi_device:chr_file rw_file_perms;

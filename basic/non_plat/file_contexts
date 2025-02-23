@@ -420,6 +420,8 @@
 /dev/gpsdl1        u:object_r:mnld_device:s0
 /dev/gpsdl1(/.*)?  u:object_r:gpsdl_device:s0
 /dev/gps_emi(/.*)? u:object_r:gps_emi_device:s0
+/dev/gpsstrg.*(/.*)? u:object_r:gpsstrg_device:s0
+/dev/gpsmdl.*(/.*)? u:object_r:gpsmdl_device:s0
 
 /dev/stpwmt(/.*)?        u:object_r:stpwmt_device:s0
 /dev/conninfra_dev(/.*)? u:object_r:conninfra_device:s0
